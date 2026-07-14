@@ -18,9 +18,11 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.regulate.app",
+      "bundleIdentifier": "com.pediben.regulate",
       "infoPlist": {
-        "UIBackgroundModes": ["audio"],
+        "UIBackgroundModes": [
+          "audio"
+        ],
         "NSMicrophoneUsageDescription": "Regulate does not record audio. This permission is required by iOS for audio playback in the background.",
         "NSPhotoLibraryUsageDescription": "Not used.",
         "CFBundleDisplayName": "Regulate",
@@ -32,11 +34,12 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#0F1A2E"
       },
-      "package": "com.regulate.app",
+      "package": "com.pediben.regulate",
       "versionCode": 1,
       "permissions": [
         "android.permission.FOREGROUND_SERVICE",
-        "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"
+        "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK",
+        "android.permission.MODIFY_AUDIO_SETTINGS"
       ]
     },
     "web": {
@@ -51,15 +54,18 @@
         {
           "microphonePermission": false
         }
-      ]
+      ],
+      "expo-audio"
     ],
     "experiments": {
       "typedRoutes": true
     },
     "extra": {
+      "router": {},
       "eas": {
-        "projectId": "your-eas-project-id"
+        "projectId": "b351da54-40c9-47f8-b50e-5f1d71303ae6"
       }
-    }
+    },
+    "owner": "pediben1986"
   }
 }
